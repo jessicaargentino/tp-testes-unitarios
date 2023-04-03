@@ -19,6 +19,11 @@ public class ListaOrdenadaTest {
         Assert.assertFalse(estaOrdenada(Arrays.asList(94, 45, 0, -5, 12, 36, 7, 6)));
     }
 
+    @Test
+    public void deveRetornarTrueUmElemento(){
+        Assert.assertTrue(estaOrdenada(Arrays.asList(2)));
+    }
+
     @Test(expected= NullPointerException.class)
     public void deveRetornarNullPointerException(){
         Assert.assertNull(estaOrdenada(Arrays.asList(null)));
