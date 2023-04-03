@@ -30,6 +30,6 @@ public class MediaTest {
 
     @Test(expected= NullPointerException.class)
     public void deveRetornarNullPointerException(){
-        Assert.assertNull(Arrays.asList(null));
+        Assert.assertNull(calculaMedia(Arrays.asList(null)));
     }
 }
